@@ -2,8 +2,9 @@ html {
  background-color: var(--color-shape-background);
  color: var(--color-text-body);
  font: var(--font-body-md-rg);
+ overflow: hidden;
 
- & .container { 
+ & .general-container { 
   height: 100vh;
   display: grid;
   grid-template-columns: 3fr 5fr;
@@ -11,13 +12,12 @@ html {
   gap: 20px;
 
    & header {
-    height: 100%;
+    height: calc(100vh - 40px);
     background: linear-gradient(180deg, rgba(33, 37, 38, 0.80) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.30) 40.5%, rgba(33, 37, 38, 0.10) 100%), url('../img/Background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
     border-radius: 12px;
-    overflow: hidden;
 
     & svg {
       margin: 32px 0 0 32px;
@@ -39,8 +39,126 @@ html {
   }
 
   & main {
+    height: calc(100vh - 40px);
     background-color: var(--color-shape-body);
     border-radius: 12px;
+    padding-block: 80px;
+    overflow: scroll;
+    
+    & .container {
+      height: 100%;
+      width: 560px;
+      margin: 0 auto;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+
+      & .section-form {
+
+        & .title {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+        }
+
+        & form {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+
+          & fieldset {
+            & legend {
+              margin-bottom: 24px;
+            }
+        
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+
+          & label {
+            display: block;
+          }
+
+          & input, & textarea {
+            height: 48px;
+            border-radius: 8px;
+            border: 1px solid var(--color-input-stroke);
+            background-color: var(--color-input-background);
+            color: var(--color-text-body);
+            padding: 16px 12px;
+            width: 100%;
+          }
+
+          & textarea {
+            height: 120px;
+            resize: vertical;
+          }
+
+          & .grid-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            & .button-group {
+              background: var(--color-input-background);
+              height: 48px;
+              padding: 4px;
+              border-radius: 8px;
+              border: 1px solid var(--color-input-stroke);
+
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+
+              & .tab-button {
+                border-radius: 5px;
+                background: transparent;
+                border: none;
+                color: var(--color-text-body);
+                font: var(--font-body-md-rg);
+                padding: 0 16px;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                width: 100%;
+                
+                &.active {
+                  background: var(--color-shape-button);
+                  font: var(--font-body-md-sb);
+                  color: var(--color-brand-light);
+                }
+
+                & span {
+                  color: var(--color-text-title);
+                }
+              }
+            }
+            
+            & .form-group {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+
+    & h2 {
+      font: var(--font-title-md);
+    } 
+
+    & h3 {
+      font: var(--font-title-sm);
+    }
   }
 }
 

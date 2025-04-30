@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="styles/_index.css">
 </head>
 <body>
-  <div class="container">
+  <div class="general-container">
     <header>
       <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_2128_1480)">
@@ -42,8 +42,122 @@
         <p>Crie um convite digital para o seu evento</p>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="form-title">
+          <h2>Crie seu convite</h2>
+        </div>
+        <div class="section-form">
+          <form action="">
+            <fieldset class="about">
+              <!-- Título -->
+              <legend class="title">            
+                <i data-lucide="calendar"></i>
+                <h3>Sobre o evento</h3>
+              </legend>
+
+              <!-- Nome do evento -->
+              <div class="form-group">
+                <label for="event-name">Título</label>
+                <input type="text" id="event-name" name="event-name" placeholder="Nome do evento" required>
+              </div>
+
+              <!-- Data -->
+              <div class="grid-group">
+                 <!-- Início -->
+                <div class="form-group">
+                  <label for="event-start-date">Início</label>
+                  <input type="date" id="event-start-date" name="event-start-date" required>
+                </div>
+                <!-- Fim -->
+                <div class="form-group">
+                  <label for="event-start-date">Início</label>
+                  <input type="date" id="event-start-date" name="event-start-date" required>
+                </div>
+              </div>
+
+              <!-- Local -->
+              <div class="grid-group">
+                <!-- tipo -->
+                <div class="form-group">
+                  <label for="">Tipo</label>
+                  <div class="button-group">
+                    <button class="tab-button active"><i data-lucide="building-2"></i><span>Presencial</span></button>
+                    <button class="tab-button"><i data-lucide="video"></i><span>Online</span></button>
+                  </div>
+                </div> 
+                <!-- Local -->
+                <div class="form-group">
+                  <label for="event-location">Local</label>
+                  <input type="text" id="event-location" name="event-location" placeholder="Link ou endereço" required>
+                </div>
+              </div>
+
+              <!-- Descrição -->
+              <div class="form-group">
+                <label for="event-description">Descrição:</label>
+                <textarea id="event-description" name="event-description" required></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="about">
+              <!-- Título -->
+              <legend class="title">            
+                <i data-lucide="calendar"></i>
+                <h3>Sobre o evento</h3>
+              </legend>
+
+              <!-- Nome do evento -->
+              <div class="form-group">
+                <label for="event-name">Título</label>
+                <input type="text" id="event-name" name="event-name" placeholder="Nome do evento" required>
+              </div>
+
+              <!-- Data -->
+              <div class="grid-group">
+                 <!-- Início -->
+                <div class="form-group">
+                  <label for="event-start-date">Início</label>
+                  <input type="date" id="event-start-date" name="event-start-date" required>
+                </div>
+                <!-- Fim -->
+                <div class="form-group">
+                  <label for="event-start-date">Início</label>
+                  <input type="date" id="event-start-date" name="event-start-date" required>
+                </div>
+              </div>
+
+              <!-- Local -->
+              <div class="grid-group">
+                <!-- tipo -->
+                <div class="form-group">
+                  <label for="">Tipo</label>
+                  <div class="button-group">
+                    <button class="tab-button active"><i data-lucide="building-2"></i><span>Presencial</span></button>
+                    <button class="tab-button"><i data-lucide="video"></i><span>Online</span></button>
+                  </div>
+                </div> 
+                <!-- Local -->
+                <div class="form-group">
+                  <label for="event-location">Local</label>
+                  <input type="text" id="event-location" name="event-location" placeholder="Link ou endereço" required>
+                </div>
+              </div>
+
+              <!-- Descrição -->
+              <div class="form-group">
+                <label for="event-description">Descrição:</label>
+                <textarea id="event-description" name="event-description" required></textarea>
+              </div>
+            </fieldset>
+          </form>
+
+        </div>
+      </div>
+    </main>
   </div>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
