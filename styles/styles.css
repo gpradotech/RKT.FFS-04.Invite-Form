@@ -4,6 +4,17 @@ html {
  font: var(--font-body-md-rg);
  overflow: hidden;
 
+& .sr-only{
+	border: 0 !important;
+	clip-path: inset(50%) !important; /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	width: 1px !important;
+	white-space: nowrap !important; /* 3 */
+}
+
  & .general-container { 
   height: 100vh;
   display: grid;
@@ -55,7 +66,7 @@ html {
       gap: 56px;
 
       & .section-form {
-
+        
         & .title {
           display: flex;
           gap: 12px;
@@ -66,6 +77,7 @@ html {
           display: flex;
           flex-direction: column;
           gap: 48px;
+          padding-bottom: 80px;
 
           & fieldset {
             & legend {
@@ -80,8 +92,35 @@ html {
             gap: 16px;
           }
 
-          & label {
+          & label, & .label {
             display: block;
+            font: var(--font-body-sm-rg);
+            margin-bottom: 12px;
+          }
+
+          & label + .radio-inner {
+            margin-top: 1rem;
+          }
+
+          .radio-inner {
+            border: 1px solid var(--color-input-stroke);
+            border-radius: 50%;
+            position: relative;
+
+            & .radio-color {
+              width: 48px;
+              height: 48px;
+              border-radius: 50%;
+              background-color: var(--color-input-background);
+            }
+
+            & input,
+            & input:focus,
+            & input:hover {
+              all: unset;
+              position: absolute;
+              inset: 0;
+            }
           }
 
           & input, & textarea {
@@ -146,6 +185,30 @@ html {
             
             & .form-group {
               flex: 1;
+            }
+          }
+
+          & .colors {
+            margin-top: 16px;
+            display: flex;
+            gap: 12px;
+
+            & .color {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 6px solid var(--color-shape-button);
+              cursor: pointer;
+              outline: 2px solid transparent;
+              transition: border-color 0.2s ease-in-out;
+
+              &.active {
+                outline: 2px solid var(--color-brand-light);
+              }
+
+              &:hover {
+                border-color: var(--color-input-stroke);
+              }
             }
           }
         }

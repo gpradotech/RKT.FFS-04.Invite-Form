@@ -99,7 +99,7 @@
                 <textarea id="event-description" name="event-description" required></textarea>
               </div>
             </fieldset>
-            <fieldset class="about">
+            <fieldset class="personalization">
               <!-- Título -->
               <legend class="title">            
                 <i data-lucide="calendar"></i>
@@ -108,45 +108,22 @@
 
               <!-- Nome do evento -->
               <div class="form-group">
-                <label for="event-name">Título</label>
-                <input type="text" id="event-name" name="event-name" placeholder="Nome do evento" required>
-              </div>
-
-              <!-- Data -->
-              <div class="grid-group">
-                 <!-- Início -->
-                <div class="form-group">
-                  <label for="event-start-date">Início</label>
-                  <input type="date" id="event-start-date" name="event-start-date" required>
+                <label>Cor principal</label>
+                <div class="colors">
+                  <!-- color 1 -->
+                    <div class="radio-inner">
+                      <div class="radio-color"></div>
+                      <label for="color-1" class="sr-only">Azul claro</label>
+                      <input type="radio" name="color-1" value="color-1" id="color-1">
+                    </div>
+                    <!-- color 2 -->
+                    <div class="radio-inner">
+                      <div class="radio-color"></div>
+                      <label for="color-1">Azul claro</label>
+                      <input type="radio" name="color-1" value="color-1" id="color-1">
+                    </div>
                 </div>
-                <!-- Fim -->
-                <div class="form-group">
-                  <label for="event-start-date">Início</label>
-                  <input type="date" id="event-start-date" name="event-start-date" required>
-                </div>
-              </div>
 
-              <!-- Local -->
-              <div class="grid-group">
-                <!-- tipo -->
-                <div class="form-group">
-                  <label for="">Tipo</label>
-                  <div class="button-group">
-                    <button class="tab-button active"><i data-lucide="building-2"></i><span>Presencial</span></button>
-                    <button class="tab-button"><i data-lucide="video"></i><span>Online</span></button>
-                  </div>
-                </div> 
-                <!-- Local -->
-                <div class="form-group">
-                  <label for="event-location">Local</label>
-                  <input type="text" id="event-location" name="event-location" placeholder="Link ou endereço" required>
-                </div>
-              </div>
-
-              <!-- Descrição -->
-              <div class="form-group">
-                <label for="event-description">Descrição:</label>
-                <textarea id="event-description" name="event-description" required></textarea>
               </div>
             </fieldset>
           </form>
