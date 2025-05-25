@@ -106,13 +106,14 @@ html {
             border: 1px solid var(--color-input-stroke);
             border-radius: 50%;
             position: relative;
+            
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            & .radio-color {
-              width: 48px;
-              height: 48px;
-              border-radius: 50%;
-              background-color: var(--color-input-background);
-            }
+            background-color: var(--color-shape-button);
 
             & input,
             & input:focus,
@@ -120,6 +121,19 @@ html {
               all: unset;
               position: absolute;
               inset: 0;
+              cursor: pointer;
+            }
+
+            & .radio-color {
+              width: 28px;
+              height: 28px;
+              border-radius: 50%;
+              position: absolute;
+            }
+
+            & input:checked {
+              border: 2px solid var(--color-brand-light);
+              border-radius: 50%;
             }
           }
 
@@ -134,7 +148,7 @@ html {
           }
 
           & textarea {
-            height: 120px;
+            min-height: 120px;
             resize: vertical;
           }
 

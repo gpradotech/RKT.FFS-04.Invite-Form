@@ -42,4 +42,48 @@
   --color-shape-background: var(--color-base-700);
   --color-shape-body: var(--color-base-500);
   --color-shape-button: var(--color-base-400);
+
+  & .brand {
+  background-color: var(--color-brand-light);
+  }
+
+  & .navy {
+  background-color: var(--color-accent-9);
+  }
+
+  & .purple {
+  background-color: var(--color-accent-1);
+  }
+
+  & .fuschia {
+  background-color: var(--color-accent-2);
+  }
+
+  & .pink {
+  background-color: var(--color-accent-3);
+  }
+
+  & .red {
+  background-color: var(--color-feedback-danger);
+  }
+
+  & .orange {
+  background-color: var(--color-accent-4);
+  }
+
+  & .yellow { 
+  background-color: var(--color-accent-5);
+  }
+
+  & .lime {
+  background-color: var(--color-accent-6);
+  }
+
+  & .green {
+  background-color: var(--color-accent-7);
+  }
+
+  & .cyan {
+  background-color: var(--color-accent-8);
+  }
 }
