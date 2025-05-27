@@ -89,7 +89,7 @@ html {
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 24px;
           }
 
           & label, & .label {
@@ -101,8 +101,8 @@ html {
           & label + .radio-inner {
             margin-top: 1rem;
           }
-
-          .radio-inner {
+          
+          & .radio-inner {
             border: 1px solid var(--color-input-stroke);
             border-radius: 50%;
             position: relative;
@@ -114,6 +114,11 @@ html {
             justify-content: center;
 
             background-color: var(--color-shape-button);
+            transition: background-color 0.2s ease-in-out;
+            
+            &:hover, &:focus {
+              background-color: var(--color-input-stroke);
+            }
 
             & input,
             & input:focus,
@@ -132,10 +137,52 @@ html {
             }
 
             & input:checked {
-              border: 2px solid var(--color-brand-light);
+              outline: 2px solid var(--color-brand-light);
               border-radius: 50%;
             }
           }
+
+          & .themes {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+          
+            & .radio-inner-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-shape-button);
+            border: 1px solid var(--color-input-stroke);
+            padding: 4px 4px 8px 4px;
+            border-radius: 8px;
+            position: relative;
+            width: 134px;
+
+            & input,
+            & input:focus,
+            & input:hover {
+                all: unset;
+                position: absolute;
+                inset: 0;
+                cursor: pointer;
+              }
+
+              & input:checked {
+                outline: 2px solid var(--color-brand-light);
+                border-radius: 8px;
+              }
+
+              &:hover, &:focus {
+                background-color: var(--color-input-stroke);
+              }
+            }
+          
+          }
+
+          
 
           & input, & textarea {
             height: 48px;
@@ -225,6 +272,8 @@ html {
               }
             }
           }
+
+          
         }
       }
     }
