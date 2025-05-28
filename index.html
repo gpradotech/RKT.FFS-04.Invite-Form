@@ -67,12 +67,12 @@
                  <!-- Início -->
                 <div class="form-group">
                   <label for="event-start-date">Início</label>
-                  <input type="date" id="event-start-date" name="event-start-date" required>
+                  <input type="datetime-local" id="event-start-date" name="event-start-date" required>
                 </div>
                 <!-- Fim -->
                 <div class="form-group">
-                  <label for="event-start-date">Início</label>
-                  <input type="date" id="event-start-date" name="event-start-date" required>
+                  <label for="event-end-date">Fim</label>
+                  <input type="datetime-local" id="event-end-date" name="event-end-date" required>
                 </div>
               </div>
 
@@ -259,6 +259,8 @@
                 </div>
               </div>
               
+              <div class="twoColumns">
+              <!-- Estilo -->
               <div class="form-group">
                 <div class="style">
                   <label>Estilo</label>
@@ -270,9 +272,50 @@
                     <label for="slider">Escuro</label>
                   </div>
                 </div>
+              </div>
+              <div class="file-container">
+  <span class="container-label">Foto de capa</span>
+  
+  <div class="file-wrapper">
 
+    <label class="file-input">
+      <input type="file" aria-label="selecionar arquivo"/>
+      <i data-lucide="upload" class="file-icon"></i>
+      <span>Selecionar</span>
+    </label>
+
+    <span class="file-label">Nenhum arquivo selecionado</span>
+
+  </div>
+</div>
               </div>
             </fieldset>
+
+            <fieldset class="contact">
+              <!-- Título -->
+              <legend class="title">            
+                <i data-lucide="contact"></i>
+                <h3>Dados para contato</h3>
+              </legend>
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Nome completo" required>
+              </div>
+              <div class="grid-group">
+                <div class="input-wrapper">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+                <div class="input-wrapper">
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+              </div>
+              
+              <div class="hr"></div>
+            </fieldset>
+
+            <button><i data-lucide="ticket"></i>Gerar convite</button>
           </form>
 
         </div>
