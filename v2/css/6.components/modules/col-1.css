@@ -1,0 +1,13 @@
+.col-1 {
+  background: linear-gradient(180deg, rgba(33, 37, 38, 0.80) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.30) 40.5%, rgba(33, 37, 38, 0.10) 100%) , url(../../../img/Background.png) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 12px;
+  padding: 32px;
+
+  & > .container {
+    display: grid;
+    gap: 16px;
+    color: var(--color-text-body);
+  }
+}

@@ -1,0 +1,32 @@
+html {
+  /* family */
+  --ff-hand-primary: "Leckerli One", cursive;
+  --ff-sans-primary: "Baloo 2", sans-serif;
+  --ff-sans-secondary: "Open Sans", sans-serif;
+
+  /* weight */
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+  
+  
+  /* size */
+    --fs-xl: 2.5rem; /* 40px */
+    --fs-lg: 1.75rem; /* 28px */
+    --fs-md: 1.125rem; /* 18px */
+    --fs-base: 1rem; /* 16px */
+    --fs-sm: 0.875rem; /* 14px */
+    --fs-xs: 0.75rem; /* 12px */
+
+  /* set tokens */ 
+  /* font-style |               font-weight |         font-size |            font-family */
+    --font-logo: normal         var(--fw-regular)     var(--fs-xl)      var(--ff-hand-primary);
+    --font-title-md: normal     var(--fw-bold)        var(--fs-lg)      var(--ff-sans-primary);
+    --font-title-sm: normal     var(--fw-bold)        var(--fs-md)      var(--ff-sans-primary);
+    --font-body-md-rg: normal   var(--fw-regular)     var(--fs-base)    var(--ff-sans-secondary);
+    --font-body-md-sb: normal   var(--fw-semi-bold)   var(--fs-base)    var(--ff-sans-secondary);
+    --font-body-sm-rg: normal   var(--fw-regular)     var(--fs-sm)      var(--ff-sans-secondary);
+    --font-body-sm-sb: normal   var(--fw-semi-bold)   var(--fs-sm)      var(--ff-sans-secondary);
+    --font-body-xs-rg: normal   var(--fw-regular)     var(--fs-xs)      var(--ff-sans-secondary);
+    --font-body-xs-sb: normal   var(--fw-semi-bold)   var(--fs-xs)      var(--ff-sans-secondary);
+}

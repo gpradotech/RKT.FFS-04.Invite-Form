@@ -1,0 +1,3 @@
+/* Variáveis globais do projeto (cores, espaçamentos, fontes, etc.). Use :root para declarar variáveis globais. */
+@import url(./modules/var-colors.css);
+@import url(./modules/var-fonts.css);

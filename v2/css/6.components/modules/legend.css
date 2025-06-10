@@ -1,0 +1,10 @@
+.fieldset-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+legend {
+  font: var(--font-title-sm);
+  color: var(--color-text-title);
+}

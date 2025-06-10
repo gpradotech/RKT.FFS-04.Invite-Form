@@ -1,0 +1,10 @@
+fieldset {
+  display: grid;
+  gap: 24px;
+  border: none;
+}
+
+.fieldset-form {
+  display: grid;
+  gap: 16px;
+}

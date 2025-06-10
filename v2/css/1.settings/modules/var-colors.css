@@ -1,0 +1,89 @@
+:root {
+  /* brand */
+  --color-brand-light: #59B2FF;
+  --color-brand-mid: #3487CF;
+  --color-brand-dark: #1D6FB6;
+
+  /* accent colors */
+  --color-accent-1: #B259FF; /* purple */
+  --color-accent-2: #FF59F9; /* fuschia */
+  --color-accent-3: #FF598B; /* pink */
+  --color-accent-4: #FF8B59; /* orange */
+  --color-accent-5: #FFCD59; /* yellow */
+  --color-accent-6: #E1FF59; /* lime */
+  --color-accent-7: #59FF91; /* green */
+  --color-accent-8: #59FFF9; /* cyan */
+  --color-accent-9: #6A59FF; /* navy */
+
+  /* base */
+  --color-base-50: #F9F9F9; /* text-heading */
+  --color-base-100: #C8CDD0; /* text-body */
+  --color-base-200: #869198; /* input-placeholder */
+  --color-base-300: #363b40; /* input-stroke */
+  --color-base-400: #2D3136; /* shape-button */
+  --color-base-500: #212427; /* shape-body */
+  --color-base-600: #1C1F21; /* input-background */
+  --color-base-700: #131516; /* shape-background */
+
+  /* feedback */
+  --color-feedback-danger: #FF5959; /* error */
+
+
+  /* text */
+  --color-text-title: var(--color-base-50);
+  --color-text-body: var(--color-base-100);
+  
+  
+  /* colors to elements tokens */
+  --color-input-placeholder: var(--color-base-200);
+  --color-input-stroke: var(--color-base-300);
+  --color-input-background: var(--color-base-600);
+
+  --color-shape-background: var(--color-base-700);
+  --color-shape-body: var(--color-base-500);
+  --color-shape-button: var(--color-base-400);
+
+  & .brand {
+  background-color: var(--color-brand-light);
+  }
+
+  & .navy {
+  background-color: var(--color-accent-9);
+  }
+
+  & .purple {
+  background-color: var(--color-accent-1);
+  }
+
+  & .fuschia {
+  background-color: var(--color-accent-2);
+  }
+
+  & .pink {
+  background-color: var(--color-accent-3);
+  }
+
+  & .red {
+  background-color: var(--color-feedback-danger);
+  }
+
+  & .orange {
+  background-color: var(--color-accent-4);
+  }
+
+  & .yellow { 
+  background-color: var(--color-accent-5);
+  }
+
+  & .lime {
+  background-color: var(--color-accent-6);
+  }
+
+  & .green {
+  background-color: var(--color-accent-7);
+  }
+
+  & .cyan {
+  background-color: var(--color-accent-8);
+  }
+}

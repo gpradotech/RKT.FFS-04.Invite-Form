@@ -1,0 +1,7 @@
+/* Blocos independentes da interface (ex: botões, cards, modais). */
+@import url(./modules/col-1.css);
+@import url(./modules/titles.css);
+@import url(./modules/fieldset.css);
+@import url(./modules/legend.css);
+@import url(./modules/label.css);
+@import url(./modules/input.css);
